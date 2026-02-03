@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Assistant</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="/img/mic (2).png">
+</head>
+<body>
+
+<!-- ========== SETUP PAGE ========== -->
+<div id="setupPage">
+    <h1>Create Your Assistant</h1>
+
+    <div class="avatar-box">
+        <img src="/img/google assistent.png" class="avatar selected">
+        <img src="/img/a1.png" class="avatar">
+        <img src="/img/g2.png" class="avatar">
+        <img src="/img/r.png" class="avatar">
+        <img src="/img/a.png" class="avatar">
+
+
+    </div>
+
+    <input type="text" id="assistantName" placeholder="Enter Assistant Name">
+
+    <button id="startBtn">Start Assistant</button>
+</div>
+
+<!-- ========== FINAL PAGE ========== -->
+<div id="mainPage">
+    <img id="logo" src="" alt="assistant">
+
+    <h1>I'm <span id="name"></span>, Your <span id="va">Virtual Assistant</span></h1>
+
+    <img src="/img/Audio wave.gif" id="voice" alt="voice">
+
+    <button id="btn">
+        <img src="/img/mic (2).png" alt="mic">
+        <span id="content">Click Here To Talk</span>
+    </button>
+
+    <div id="credit">Group AI Virtual Assistant</div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

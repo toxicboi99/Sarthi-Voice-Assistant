@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= SETUP PAGE ================= */
+
+#setupPage{
+    min-height: 100vh;
+    background: black;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-family: "Playfair Display", serif;
+}
+
+.avatar-box{
+    display: flex;
+    gap: 60px;
+}
+
+.avatar{
+    width: 250px;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: 0.3s;
+}
+
+.avatar:hover{
+    transform: scale(1.1);
+}
+
+.avatar.selected{
+    border-color: rgb(201,41,116);
+}
+
+#assistantName{
+    width: 260px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+}
+
+#startBtn{
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right,rgb(21,145,207),rgb(201,41,116));
+    color: bisque;
+}
+
+/* ================= FINAL PAGE ================= */
+
+#mainPage{
+    display: none;
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-family: "Playfair Display", serif;
+}
+
+#logo{
+    width: 20%;
+}
+
+h1{
+    color: antiquewhite;
+    text-align: center;
+}
+
+#name{
+    color: rgb(179, 28, 187);
+    font-size: 50px;
+}
+
+#va{
+    color: rgb(39, 63, 163);
+    font-size: 50px;
+}
+
+#voice{
+    width: 100px;
+    display: none;
+}
+
+#btn{
+    width: 280px;
+    background: linear-gradient(to right,rgb(21,145,207),rgb(201,41,116));
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: bisque;
+    cursor: pointer;
+    border: none;
+}
+
+#credit{
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    font-size: 16px;
+    color: #ed0a0a;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+    #logo{ width: 60%; }
+    #name,#va{ font-size: 32px; }
+    #btn{ width: 90%; }
+}

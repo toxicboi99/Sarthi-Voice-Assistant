@@ -93,7 +93,7 @@ function takeCommand(message){
     }
 
     else if(message.includes("who are you")){
-        speak("I am virtual assistant developed by Abhishek Rajput")
+        speak("I am virtual assistant developed by Abhishek || Ritesh || Suhani")
     }
 
     // ================= YOUTUBE =================
@@ -281,3 +281,4 @@ window.addEventListener("load", () => {
     }
 
 });
+
